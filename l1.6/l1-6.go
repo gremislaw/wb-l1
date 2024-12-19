@@ -30,7 +30,6 @@ func quit1() {
 	time.Sleep(1 * time.Second)
 }
 
-
 /*** Использование контекста ***/
 
 func quit2() {
@@ -54,7 +53,6 @@ func quit2() {
 	time.Sleep(1 * time.Second)
 }
 
-
 /*** Использование флага ***/
 
 func quit3() {
@@ -77,7 +75,6 @@ func quit3() {
 	time.Sleep(1 * time.Second)
 }
 
-
 /*** Использование таймера ***/
 
 func quit4() {
@@ -93,14 +90,13 @@ func quit4() {
 				return
 			case <-ticker.C:
 				fmt.Println("some information")
-			}			
+			}
 		}
 	}(timer, ticker)
 	<-q
 	fmt.Println("closing goroutine by timer")
 	time.Sleep(1 * time.Second)
 }
-
 
 func main() {
 	fmt.Println("channel to close goroutine")
