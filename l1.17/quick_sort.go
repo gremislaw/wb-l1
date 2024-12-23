@@ -1,10 +1,4 @@
-// Реализовать быструю сортировку массива (quicksort) встроенными методами языка.
-
 package main
-
-import (
-	"fmt"
-)
 
 func quickSort(arr []int) {
 	if len(arr) <= 1 {
@@ -33,13 +27,4 @@ func quickSort(arr []int) {
 	quickSort(arr[l:]) // Cортировка правой половины
 
 	quickSort(arr[:r+1]) // Cортировка левой половины
-}
-
-func main() {
-	nums1 := []int{3, 17, 15, 2, 18, 0, 5, 3, 3, 2, 17, 1}
-	fmt.Print(nums1, " -> my_sort ->\t")
-
-	// Своя реализация
-	quickSort(nums1)
-	fmt.Println(nums1)
 }
