@@ -1,11 +1,11 @@
 // Реализовать бинарный поиск встроенными методами языка.
 
-//// ПРИ ЗАПУСКЕ НЕ ЗАБЫВАТЬ УКАЗЫВАТЬ ФАЙЛ "quick_sort.go"
-//// go run l1.17/l1-17.go l1.17/quick_sort.go
-
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"l1/l1.17/sort"
+)
 
 func binary_search(arr []int, n int) int {
 	left := 0
@@ -34,7 +34,7 @@ func main() {
 	arr := []int{3, 17, 15, 2, 18, -5, 0, 5, -1, 3, 2, 17, 1, -2}
 	fmt.Println(arr)
 
-	quickSort(arr) // Сортировка массива
+	sort.QuickSort(arr) // Сортировка массива
 	fmt.Println(arr)
 
 	n := 3

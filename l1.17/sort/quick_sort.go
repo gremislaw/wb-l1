@@ -1,6 +1,6 @@
-package main
+package sort
 
-func quickSort(arr []int) {
+func QuickSort(arr []int) {
 	if len(arr) <= 1 {
 		return
 	}
@@ -24,7 +24,7 @@ func quickSort(arr []int) {
 		}
 	}
 
-	quickSort(arr[l:]) // Cортировка правой половины
+	QuickSort(arr[l:]) // Cортировка правой половины
 
-	quickSort(arr[:r+1]) // Cортировка левой половины
+	QuickSort(arr[:r+1]) // Cортировка левой половины
 }
