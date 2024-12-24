@@ -12,6 +12,6 @@ import (
 func main() {
 	a := point.NewPoint(5, 3)
 	b := point.NewPoint(4, 10)
-	
+
 	fmt.Println(a.GetDistance(b))
 }

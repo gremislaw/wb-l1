@@ -7,7 +7,7 @@ type Point struct {
 }
 
 // Конструктор
-func NewPoint(x, y float64) *Point { 
+func NewPoint(x, y float64) *Point {
 	return &Point{x, y}
 }
 
@@ -33,5 +33,5 @@ func (p *Point) SetY(y float64) {
 
 // Расчет расстояния между точками
 func (p1 *Point) GetDistance(p2 *Point) float64 {
-	return math.Sqrt(math.Pow(p2.x - p1.x, 2) + math.Pow(p2.y - p1.y, 2))
+	return math.Sqrt(math.Pow(p2.x-p1.x, 2) + math.Pow(p2.y-p1.y, 2))
 }
